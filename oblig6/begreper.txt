@@ -1,0 +1,13 @@
+
+
+
+A: 1
+B: 19, 20
+C: 3 4 5
+D: 2
+E: 7, 11, 15
+F: 19, 20, eller er det alle de metodene som henter en instansvariabel?
+G: alle steder der metoder blir opprettet, eller kalt på. 
+
+
+

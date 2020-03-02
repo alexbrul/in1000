@@ -1,0 +1,18 @@
+1)
+
+innkapsling gjør man ved å skjule verdiene objektet har, og bare la andre deler av programmet endre informasjonen gjennom hjelpemetoder. Dette gjør at verdiene bare kan bli endret på forventet måte. typ kjør() i forrige oppgave
+
+2)
+
+Grensesnittet til en klasse er en "Guide" for hvilke metoder en klasse skal ha og hva den skal returnere. Grensesnitt kan brukes for å planlegge, og for å få en oversikt. Hvis en tilbyder har en tjeneste kan de gi ut et "grensesnitt" for hvordan folk kobler seg på systemet deres, og som viser hva som må til for at andre skal klare det. Et grensesnitt skiller seg fra implementasjonen ved at alle metodene er fullført.
+
+
+
+3) 
+
+en instansmetode er en metode som kjører ved en instans. Lettere forklart, for oss er det metoden som skjører i instansen der objektet blir opprettet. Denne brukes for å sette faste verdier som er påkrevd for objektet.
+
+
+
+
+
