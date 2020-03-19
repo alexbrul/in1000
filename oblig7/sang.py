@@ -9,25 +9,25 @@ class Sang:
         self._artist = artist
 
 
-    def spill():
+    def spill(self):
         #spill sang
-        print("spiller sang ", _tittel, " av: ", _artist, ". ")
+        print("spiller sang ", self._tittel, " av: ", self._artist, ". ")
         return None
 
-    def sjekkArtist(navn):
-        for navniter in self.artist.split():
+    def sjekkArtist(self, navn):
+        for navniter in self._artist.split():
             for navn2 in navn.split():
-                if navniter == navn:
+                if navniter == navn2:
                     return True
         return False
 
-    def sjekkTittel(tittel):
-        if tittel.lower() == _tittel.lower():
+    def sjekkTittel(self, tittel):
+        if tittel.lower() == self._tittel.lower():
             return True
         return False
 
-    def sjekkArtistOgTittel(artist, tittel):
-        if sjekkArtist(artist) and sjekkTittel(tittel):
+    def sjekkArtistogTittel(self, artist, tittel):
+        if self.sjekkArtist(artist) and self.sjekkTittel(tittel):
             return True
         return False
 
