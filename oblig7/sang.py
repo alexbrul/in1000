@@ -1,7 +1,4 @@
 class Sang:
-    _tittel = None
-    _artist = None
-
 
 
     def __init__(self, tittel, artist):
@@ -12,7 +9,6 @@ class Sang:
     def spill(self):
         #spill sang
         print("spiller sang ", self._tittel, " av: ", self._artist, ". ")
-        return None
 
     def sjekkArtist(self, navn):
         for navniter in self._artist.split():

@@ -7,9 +7,9 @@ class Spilleliste:
 
     def lesFraFil(self, filnavn):
 
-        with open(filnavn, "-r") as infile:
+        with open(filnavn, "r") as infile:
             for line in infile:
-                line = linje.strip().split(';')
+                line = line.strip().split(';')
                 newsang = Sang(line[0], line[1])
                 self._sanger.append(newsang)
 
@@ -28,7 +28,7 @@ class Spilleliste:
 
     def finnSang(self, tittel):
         for i in self._sanger:
-            if sjekkTittel(tittel):
+            if i.sjekkTittel(tittel):
                 return i
         return None
 
@@ -37,6 +37,8 @@ class Spilleliste:
 
         for i in self._sanger:
             if i.sjekkArtist(artistnavn):
-                tmp.add(i)
+                tmp.append(i)
+
+        return tmp
 
 
