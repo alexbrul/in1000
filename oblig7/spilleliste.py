@@ -1,12 +1,15 @@
 from sang import Sang
+#importerer den andre klassen
 
 class Spilleliste:
+    #konstruktør
     def __init__(self, listenavn):
         self._sanger = []
         self._navn = listenavn
 
     def lesFraFil(self, filnavn):
 
+        #med fil, for linje i filen, splitter opp og fikser. ?strip? fjerner mellomrom?
         with open(filnavn, "r") as infile:
             for line in infile:
                 line = line.strip().split(';')
@@ -33,8 +36,9 @@ class Spilleliste:
         return None
 
     def hentArtistUtvalg(self, artistnavn):
+        #lager en liste til å lagre innholdet
         tmp = []
-
+        #for alle sanger i spillelisten, hvis artisten stemmer, så legg til i tmp
         for i in self._sanger:
             if i.sjekkArtist(artistnavn):
                 tmp.append(i)

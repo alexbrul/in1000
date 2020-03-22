@@ -1,0 +1,9 @@
+
+
+b) Det egner seg ikke med en ordbok fordi rekkefølgen til sangene betyr noe. Spillelister er også relativt korte, så det er uhensiktsmessig å bruke en ordbok. 
+
+c) Det er ikke nødvendigvis alle spillelister som man oppretter ved å lese fra fil. Nå kan jeg lage en spilleliste uten et tekst dokument. 
+
+Jeg kan også lese inn flere filer, og ikke bare en. 
+
+
