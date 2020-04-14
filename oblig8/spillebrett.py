@@ -81,16 +81,27 @@ class Spillebrett:
 
 
                 if self.rutenett[i][k].erLevende():
-                    if levnab <2 or levnab == 4:
+                    if levnab <2 or levnab >= 4:
                         slaktet.append(self.rutenett[i][k])
                 else:
                     if levnab == 3:
                         bliLevende.append(self.rutenett[i][k])
 
-        for i in bliLevende:
-            i.settLevende()
-        for i in slaktet:
-            i.settDoed()
+        for rute1 in bliLevende:
+            rute1.settLevende()
+        for rute2 in slaktet:
+            rute2.settDoed()
+        self.generasjon = self.generasjon+1
+
+
+    def finnAntallLevende(self):
+        teller = 0
+        for a in self.rutenett:
+            for b in a:
+                if b.erLevende():
+                    teller = teller+1
+        return teller
+
 
 
 
